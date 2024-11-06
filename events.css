@@ -55,7 +55,6 @@ iframe.airtable-embed {
   background-color: var(--primary-color);
   color: var(--background-color);
   text-align: center;
-  padding: 10px;
   transition: transform 0.3s; /* Add a smooth transition effect */
   transform: translateY(0); /* Initially, keep the header in view */
   position: fixed;
