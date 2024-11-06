@@ -47,7 +47,7 @@ iframe.airtable-embed {
   padding: 0; /* Remove padding */
   margin: 0; /* Remove margin */
   overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 20%; /* Add a top margin to push the content below the header */
+  padding-top: 5%; /* Add a top margin to push the content below the header */
 }
 
 
