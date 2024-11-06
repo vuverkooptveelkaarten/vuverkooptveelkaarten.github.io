@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #0277b3;
+  --text-color: #000000; /* Black */
+  --background-color: #ffffff; /* White */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0; /* Remove default body margin */
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 20px;
+}
+
+nav ul {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+iframe.airtable-embed {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the event blocks */
+  flex-direction: column;
+  flex-grow: 1; /* Make main grow to fill the remaining space */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+  padding-top: 20%; /* Add a top margin to push the content below the header */
+}
+
+
+.sticky-header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  transform: translateY(0); /* Initially, keep the header in view */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.sticky-header.hidden {
+  transform: translateY(-100%); /* Hide the header by moving it up */
+}
+
+.sticky-header header {
+  text-align: center;
+  padding: 10px;
+}
