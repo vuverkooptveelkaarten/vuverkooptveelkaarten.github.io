@@ -84,7 +84,7 @@ main {
 }
 
 .event-section h2 {
-  text-align: center;
+  text-align: left;
   font-size: 38px;
 }
 
@@ -140,7 +140,7 @@ main {
 @media (max-width: 800px) {
   .event-content {
     flex-direction: column; /* Stack text and image on small screens */
-    align-items: center; /* Center-align the content */
+    align-items: left; /* Center-align the content */
   }
 
   .event-text,
