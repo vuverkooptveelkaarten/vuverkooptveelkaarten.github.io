@@ -19,10 +19,9 @@ header {
   padding: 20px;
 }
 
-.content {
-  max-width: 800px;
-  margin: 100px auto 0 auto; /* 100px margin-top to avoid the fixed header */
-  padding: 20px;
+div {
+  display: block;
+  unicode-bidi: isolate;
 }
 
 nav ul {
@@ -75,4 +74,14 @@ iframe.airtable-embed {
 .sticky-header header {
   text-align: center;
   padding: 10px;
+}
+
+.event-section {
+  width: 95%;
+  margin: 2.5% 0;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2.5%;
+  border-radius: 20px;
 }
