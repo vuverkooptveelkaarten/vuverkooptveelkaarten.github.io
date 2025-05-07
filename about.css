@@ -19,6 +19,12 @@ header {
   padding: 20px;
 }
 
+.content {
+  max-width: 800px;
+  margin: 100px auto 0 auto; /* 100px margin-top to avoid the fixed header */
+  padding: 20px;
+}
+
 nav ul {
   background-color: var(--primary-color);
   color: var(--background-color);
