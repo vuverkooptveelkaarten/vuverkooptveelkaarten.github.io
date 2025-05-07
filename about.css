@@ -78,7 +78,6 @@ main {
 .event-section {
   width: 95%; /* Set the width of the event section to 100% */
   margin: 2.5% 0; /* Adjust margin as needed */
-  text-align: center;
   background-color:  var(--primary-color);
   color: white;
   padding: 2.5%;
@@ -89,6 +88,30 @@ main {
   text-align: center;
   font-size: 38px;
 }
+
+.event-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+.event-text {
+  flex: 1 1 60%;
+}
+
+.event-image {
+  flex: 1 1 35%;
+  max-width: 400px;
+}
+
+.event-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px; /* Optional styling */
+}
+
 
 .button {
   display: inline-block;
@@ -106,4 +129,14 @@ main {
   background-color: #ffffff; /* White background color on hover */
   color: #0277b3; /* Text color on hover */
   border-color: #0277b3; /* Border color on hover */
+}
+
+@media (max-width: 768px) {
+  .event-content {
+    flex-direction: column;
+  }
+
+  .event-image {
+    max-width: 100%;
+  }
 }
