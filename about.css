@@ -106,7 +106,7 @@ main {
 }
 
 .event-image img {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
   max-width: 100%;
@@ -145,7 +145,7 @@ main {
   }
 
   .event-image img {
-    max-width: 100%;  /* Don't let it go edge-to-edge */
+    max-width: 90%;  /* Don't let it go edge-to-edge */
     margin: 0 auto;  /* Center the image */
   }
 }
