@@ -35,4 +35,22 @@
         </div>
     </main>
 </body>
+
+<script>
+    let lastScroll = 0;
+    const header = document.querySelector('.sticky-header');
+  
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll) {
+        // Scrolling down
+        header.classList.add('hidden');
+      } else {
+        // Scrolling up
+        header.classList.remove('hidden');
+      }
+      lastScroll = currentScroll;
+    });
+  </script>
+
 </html>
