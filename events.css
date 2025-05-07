@@ -50,6 +50,12 @@ iframe.airtable-embed {
   padding-top: 5%; /* Add a top margin to push the content below the header */
 }
 
+.content {
+  max-width: 800px;
+  margin: 100px auto 0 auto; /* 100px margin-top to avoid the fixed header */
+  padding: 20px;
+}
+
 
 .sticky-header {
   background-color: var(--primary-color);
