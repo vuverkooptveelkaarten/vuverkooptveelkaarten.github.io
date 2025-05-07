@@ -6,34 +6,36 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-<div class="sticky-header">
-    <header>
-        <h1>VU ORCHESTRA TOUR</h1>
-    </header> 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</div>
 <body>
-    <main>
-        <div class="event-section"> 
-            <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSdVXnRLaN30CC5kDsNT4Wowndl1gEyeWfmbXaov7omJIAPK5Q/viewform?embedded=true"
-                width="100%"
-                height="1500"
-                frameborder="0"
-                marginheight="0"
-                marginwidth="0"
-                style="border: none;">
-                Loading sign-up form...
-            </iframe>   
-        </div>
-    </main>
+    <div class="sticky-header">
+        <header>
+            <h1>VU ORCHESTRA TOUR</h1>
+        </header> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="page-content">
+        <main>
+            <div class="event-section"> 
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSdVXnRLaN30CC5kDsNT4Wowndl1gEyeWfmbXaov7omJIAPK5Q/viewform?embedded=true"
+                    width="100%"
+                    height="1500"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    style="border: none;">
+                    Loading sign-up form...
+                </iframe>   
+            </div>
+        </main>
+    </div>
 </body>
 
 <script>
@@ -51,6 +53,18 @@
       }
       lastScroll = currentScroll;
     });
-  </script>
+
+    function adjustContentMargin() {
+    const header = document.querySelector('.sticky-header');
+        const content = document.querySelector('.page-content');
+        if (header && content) {
+        const headerHeight = header.offsetHeight;
+        content.style.marginTop = headerHeight + 'px';
+        }
+    }
+
+    window.addEventListener('load', adjustContentMargin);
+    window.addEventListener('resize', adjustContentMargin);
+</script>
 
 </html>
