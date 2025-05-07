@@ -40,19 +40,6 @@ nav a {
   font-size: 1.2em; /* make header text bigger */
 }
 
-iframe.airtable-embed {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center-align the event blocks */
-  flex-direction: column;
-  flex-grow: 1; /* Make main grow to fill the remaining space */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 5%; /* Add a top margin to push the content below the header */
-}
-
-
 .sticky-header {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -71,4 +58,8 @@ iframe.airtable-embed {
 .sticky-header header {
   text-align: center;
   padding: 10px;
+}
+
+.centered-text {
+  text-align: center;
 }
