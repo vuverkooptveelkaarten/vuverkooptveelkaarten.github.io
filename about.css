@@ -97,12 +97,12 @@ main {
 }
 
 .event-text {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
 }
 
 .event-image {
-  flex: 1 1 35%;
-  max-width: 400px;
+  flex: 1 1 50%;
+  max-width: 100%;
 }
 
 .event-image img {
@@ -136,7 +136,8 @@ main {
     flex-direction: column;
   }
 
-  .event-image {
-    max-width: 100%;
+  .event-text, .event-image {
+    flex: 1 1 100%;
   }
 }
+
