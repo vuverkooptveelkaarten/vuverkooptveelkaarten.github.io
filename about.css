@@ -109,9 +109,9 @@ main {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px; /* Optional styling */
+  max-width: 100%;
+  border-radius: 8px;
 }
-
 
 .button {
   display: inline-block;
@@ -131,13 +131,16 @@ main {
   border-color: #0277b3; /* Border color on hover */
 }
 
-@media (max-width: 768px) {
-  .event-content {
-    flex-direction: column;
+@media (max-width: 600px) {
+  .event-image {
+    padding-top: 20px;
   }
 
-  .event-text, .event-image {
-    flex: 1 1 100%;
+  .event-image img {
+    max-width: 90%;  /* Don't let it go edge-to-edge */
+    margin: 0 auto;  /* Center the image */
+    display: block;
   }
 }
+
 
