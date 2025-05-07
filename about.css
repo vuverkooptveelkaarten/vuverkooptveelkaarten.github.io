@@ -98,12 +98,17 @@ main {
 
 .event-text {
   flex: 1 1 40%; /* Ensure the text takes up 50% of the space */
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .event-image {
   flex: 1 1 40%; /* Ensure the image takes up 50% of the space */
-  max-width: 40%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;  /* horizontal centering */
+  align-items: center;      /* vertical centering */
+  flex-direction: column;   /* keep image and caption stacked */
+  text-align: center;       /* center the caption text */
 }
 
 .event-image img {
@@ -145,7 +150,16 @@ main {
     text-align: center; /* Center-align text on mobile */
   }
 
+  .event-image {
+    display: flex;
+    justify-content: center;  /* horizontal centering */
+    align-items: center;      /* vertical centering */
+    flex-direction: column;   /* keep image and caption stacked */
+    text-align: center;       /* center the caption text */
+  }
+
   .event-image img {
+
     max-width: 100%;  /* Don't let it go edge-to-edge */
     margin: 0 auto;  /* Center the image */
   }
