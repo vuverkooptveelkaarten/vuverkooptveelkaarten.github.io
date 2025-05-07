@@ -93,16 +93,19 @@ main {
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap; /* For responsiveness */
+  width: 100%;
 }
 
 .event-text {
   flex: 1 1 50%; /* Ensure the text takes up 50% of the space */
   max-width: 50%;
+  display: block; /* Ensures no conflicting styles are overriding the flexbox */
 }
 
 .event-image {
   flex: 1 1 50%; /* Ensure the image takes up 50% of the space */
   max-width: 50%;
+  display: block; /* Ensures no conflicting styles are overriding the flexbox */
 }
 
 .event-image img {
@@ -145,7 +148,7 @@ main {
   }
 
   .event-image img {
-    max-width: 100%;  /* Don't let it go edge-to-edge */
+    max-width: 90%;  /* Don't let it go edge-to-edge */
     margin: 0 auto;  /* Center the image */
   }
 }
