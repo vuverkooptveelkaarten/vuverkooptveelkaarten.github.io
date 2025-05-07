@@ -48,3 +48,22 @@ nav a {
 }
 
 
+.sticky-header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  transition: transform 0.3s; /* Add a smooth transition effect */
+  transform: translateY(0); /* Initially, keep the header in view */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.sticky-header.hidden {
+  transform: translateY(-100%); /* Hide the header by moving it up */
+}
+
+.sticky-header header {
+  text-align: center;
+  padding: 10px;
+}
