@@ -17,7 +17,6 @@ html, body {
   padding: 0;
 }
 
-
 header {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -78,7 +77,7 @@ main {
 .event-section {
   width: 95%; /* Set the width of the event section to 100% */
   margin: 2.5% 0; /* Adjust margin as needed */
-  background-color:  var(--primary-color);
+  background-color: var(--primary-color);
   color: white;
   padding: 2.5%;
   border-radius: 20px;
@@ -97,11 +96,12 @@ main {
 }
 
 .event-text {
-  flex: 1 1 50%;
+  flex: 1 1 50%; /* Ensure the text takes up 50% of the space */
+  max-width: 50%;
 }
 
 .event-image {
-  flex: 1 1 50%;
+  flex: 1 1 50%; /* Ensure the image takes up 50% of the space */
   max-width: 50%;
 }
 
@@ -132,15 +132,20 @@ main {
 }
 
 @media (max-width: 600px) {
+  .event-content {
+    flex-direction: column; /* Stack text and image on small screens */
+    align-items: center; /* Center-align the content */
+  }
+
+  .event-text,
   .event-image {
-    padding-top: 20px;
+    flex: 1 1 100%; /* Make both sections take up 100% width on smaller screens */
+    max-width: 100%;
+    text-align: center; /* Center-align text on mobile */
   }
 
   .event-image img {
     max-width: 90%;  /* Don't let it go edge-to-edge */
     margin: 0 auto;  /* Center the image */
-    display: block;
   }
 }
-
-
