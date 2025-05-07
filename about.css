@@ -12,27 +12,18 @@ body {
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 header {
   background-color: var(--primary-color);
   color: var(--background-color);
   text-align: center;
   padding: 20px;
   font-size: 2em; /* make header text bigger */
-}
-
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center-align the event blocks */
-  padding: 10px;
-  flex-direction: column;
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 20%; /* Add a top margin to push the content below the header */
 }
 
 nav ul {
@@ -42,7 +33,6 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  font-size: 1.2em; /* make header text bigger */
 }
 
 nav li {
@@ -56,11 +46,20 @@ nav a {
   font-size: 1.2em; /* make nav links bigger */
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center-align the event blocks */
+  padding: 10px;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling when content overflows */
+}
 
 .sticky-header {
   background-color: var(--primary-color);
   color: var(--background-color);
   text-align: center;
+  padding: 10px 0;
   transition: transform 0.3s; /* Add a smooth transition effect */
   transform: translateY(0); /* Initially, keep the header in view */
   position: fixed;
@@ -77,10 +76,34 @@ nav a {
 }
 
 .event-section {
-  width: 95%;
-  margin: 2.5% 0;
-  background-color: var(--primary-color);
+  width: 95%; /* Set the width of the event section to 100% */
+  margin: 2.5% 0; /* Adjust margin as needed */
+  text-align: center;
+  background-color:  var(--primary-color);
   color: white;
   padding: 2.5%;
   border-radius: 20px;
+}
+
+.event-section h2 {
+  text-align: center;
+  font-size: 38px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #ffffff; /* White text color */
+  background-color: #0277b3; /* Background color */
+  border: 2px solid #ffffff; /* White border */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffff; /* White background color on hover */
+  color: #0277b3; /* Text color on hover */
+  border-color: #0277b3; /* Border color on hover */
 }
