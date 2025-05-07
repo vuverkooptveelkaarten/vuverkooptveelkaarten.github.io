@@ -132,7 +132,7 @@ main {
   border-color: #0277b3; /* Border color on hover */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .event-content {
     flex-direction: column; /* Stack text and image on small screens */
     align-items: center; /* Center-align the content */
@@ -146,7 +146,7 @@ main {
   }
 
   .event-image img {
-    max-width: 90%;  /* Don't let it go edge-to-edge */
+    max-width: 100%;  /* Don't let it go edge-to-edge */
     margin: 0 auto;  /* Center the image */
   }
 }
