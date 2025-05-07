@@ -1,3 +1,4 @@
+/* Define the color variables */
 :root {
   --primary-color: #0277b3;
   --text-color: #000000; /* Black */
@@ -5,34 +6,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0; /* Remove default body margin */
+  margin: 0;
   padding: 0;
-}
-
-header {
+  font-family: Arial, sans-serif;
   background-color: var(--primary-color);
-  color: var(--background-color);
-  text-align: center;
-  padding: 20px;
-  font-size: 2em; /* make header text bigger */
-}
-
-div {
-  display: block;
-  unicode-bidi: isolate;
-}
-
-main {
+  color: white;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center-align the event blocks */
-  padding: 10px;
-  flex-direction: column;
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 20%; /* Add a top margin to push the content below the header */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -42,7 +25,6 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: center;
-  font-size: 1.2em; /* make header text bigger */
 }
 
 nav li {
@@ -53,48 +35,8 @@ nav a {
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em; /* make nav links bigger */
 }
 
-iframe.airtable-embed {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center-align the event blocks */
-  flex-direction: column;
-  flex-grow: 1; /* Make main grow to fill the remaining space */
-  padding: 0; /* Remove padding */
-  margin: 0; /* Remove margin */
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 5%; /* Add a top margin to push the content below the header */
-}
-
-
-.sticky-header {
-  background-color: var(--primary-color);
-  color: var(--background-color);
+.centered-text {
   text-align: center;
-  transition: transform 0.3s; /* Add a smooth transition effect */
-  transform: translateY(0); /* Initially, keep the header in view */
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-}
-
-.sticky-header.hidden {
-  transform: translateY(-100%); /* Hide the header by moving it up */
-}
-
-.sticky-header header {
-  text-align: center;
-  padding: 10px;
-}
-
-.event-section {
-  width: 95%;
-  margin: 2.5% 0;
-  text-align: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 2.5%;
-  border-radius: 20px;
 }

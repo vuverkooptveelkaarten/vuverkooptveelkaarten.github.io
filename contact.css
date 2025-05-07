@@ -1,3 +1,4 @@
+/* Define the color variables */
 :root {
   --primary-color: #0277b3;
   --text-color: #000000; /* Black */
@@ -5,30 +6,16 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  margin: 0; /* Remove default body margin */
+  margin: 0;
   padding: 0;
-}
-
-header {
+  font-family: Arial, sans-serif;
   background-color: var(--primary-color);
-  color: var(--background-color);
-  text-align: center;
-  padding: 20px;
-  font-size: 2em; /* make header text bigger */
-}
-
-
-main {
+  color: white;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center-align the event blocks */
-  padding: 10px;
-  flex-direction: column;
-  overflow-y: auto; /* Enable vertical scrolling when content overflows */
-  padding-top: 20%; /* Add a top margin to push the content below the header */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
 }
 
 nav ul {
@@ -48,27 +35,6 @@ nav a {
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em; /* make header text bigger */
-}
-
-.sticky-header {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  text-align: center;
-  transition: transform 0.3s; /* Add a smooth transition effect */
-  transform: translateY(0); /* Initially, keep the header in view */
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-}
-
-.sticky-header.hidden {
-  transform: translateY(-100%); /* Hide the header by moving it up */
-}
-
-.sticky-header header {
-  text-align: center;
-  padding: 10px;
 }
 
 .centered-text {
