@@ -96,24 +96,14 @@ main {
   width: 100%;
 }
 
-.event-text ul {
-  padding-left: 20px; /* or 0 if you want no indent */
-  margin: 0;
-}
-
-.event-text li {
-  margin-bottom: 5px;
-}
-
-
 .event-text {
-  flex: 1 1 50%; /* Ensure the text takes up 50% of the space */
-  max-width: 50%;
+  flex: 1 1 40%; /* Ensure the text takes up 50% of the space */
+  max-width: 40%;
 }
 
 .event-image {
-  flex: 1 1 50%; /* Ensure the image takes up 50% of the space */
-  max-width: 50%;
+  flex: 1 1 40%; /* Ensure the image takes up 50% of the space */
+  max-width: 40%;
 }
 
 .event-image img {
