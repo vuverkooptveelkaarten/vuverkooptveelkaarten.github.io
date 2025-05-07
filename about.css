@@ -53,6 +53,7 @@ nav a {
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em; /* make nav links bigger */
 }
 
 iframe.airtable-embed {
