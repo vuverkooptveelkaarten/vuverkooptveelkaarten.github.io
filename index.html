@@ -43,14 +43,13 @@
     const content = document.querySelector('.page-content');
     let lastScroll = 0;
   
-    function adjustContentMargin() {
+    function adjustContentPadding() {
       if (header && content) {
         const headerHeight = header.offsetHeight;
-        content.style.marginTop = headerHeight + 'px';
+        content.style.paddingTop = headerHeight + 'px';
       }
     }
   
-    // Detect scroll direction to show/hide header
     window.addEventListener('scroll', () => {
       const currentScroll = window.pageYOffset;
       if (currentScroll > lastScroll) {
@@ -61,12 +60,11 @@
       lastScroll = currentScroll;
     });
   
-    // Wait for fonts and layout to settle before measuring
     window.addEventListener('load', () => {
-      setTimeout(adjustContentMargin, 100);
+      requestAnimationFrame(adjustContentPadding);
     });
   
-    window.addEventListener('resize', adjustContentMargin);
+    window.addEventListener('resize', adjustContentPadding);
   </script>
   
 

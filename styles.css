@@ -12,6 +12,12 @@ body {
   padding: 0;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
 header {
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -53,7 +59,7 @@ main {
   background-color: var(--primary-color);
   color: var(--background-color);
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   transition: transform 0.3s; /* Add a smooth transition effect */
   transform: translateY(0); /* Initially, keep the header in view */
   position: fixed;
