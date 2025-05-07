@@ -17,6 +17,7 @@ header {
   color: var(--background-color);
   text-align: center;
   padding: 20px;
+  font-size: 2em; /* make header text bigger */
 }
 
 nav ul {
@@ -36,6 +37,7 @@ nav a {
   color: var(--background-color);
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em; /* make nav links bigger */
 }
 
 main {
