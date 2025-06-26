@@ -147,3 +147,15 @@ main {
   font-weight: normal;
   font-size: 0.9em;
 }
+
+.poster-container {
+  text-align: center;
+  margin: 40px 0 20px 0;
+}
+
+.tour-poster {
+  max-width: 90%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
